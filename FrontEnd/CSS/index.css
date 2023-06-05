@@ -1,0 +1,36 @@
+.header {
+    text-align: center;
+    background-color: #bfcdbf;
+    width: 75%;
+    margin: auto;
+
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+    border-radius: 12px;
+}
+.header > h1 {
+    font-size: 70px;
+    line-height: 100px;
+}
+.header > p {
+    font-size: 26px;
+    line-height: 40px;
+}
+
+.single_web {
+    background-color: #FB9966;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1.5px solid black;
+}
+
+.single_web > a {
+    line-height: 200px;
+    text-decoration: none;
+    color: black;
+    font-size: 50px;
+    text-align: center;
+
+    display: block;
+}
