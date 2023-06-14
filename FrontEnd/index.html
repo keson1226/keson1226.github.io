@@ -7,24 +7,205 @@
     <title>Boring Website</title>
     <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="./CSS/index.css">
+    <script src="./JavaScript/index.js"></script>
 </head>
 <body>
     <div class="header">
         <h1>邏輯思維與網頁程式設計</h1>
-        <p>這裡有小黑1-7次的網頁們</p>
     </div>
 
-    <div class="anchar">
-        <div class="single_web" style="background-color: #F596AA;"><a href="http://www.google.com">Google</a></div>
-        <div class="single_web" style="background-color: #FB966E;"><a href="http://www.google.com">Google</a></div>
-        <div class="single_web" style="background-color: #EBB471;"><a href="http://www.google.com">Google</a></div>
-        <div class="single_web" style="background-color: #ADA142;"><a href="http://www.google.com">Google</a></div>
-        <div class="single_web" style="background-color: #90B44B;"><a href="http://www.google.com">Google</a></div>
-        <div class="single_web" style="background-color: #24936E;"><a href="http://www.google.com">Google</a></div>
-        <div class="single_web" style="background-color: #A5DEE4;"><a href="http://www.google.com">Google</a></div>
-        <div class="single_web" style="background-color: #B28FCE;"><a href="http://www.google.com">Google</a></div>
-        <div class="single_web" style="background-color: #6A4C9C;"><a href="http://www.google.com">Google</a></div>
+    <div class="web-contain" style="width: 100%;overflow:hidden">
 
+        <div class="left" style="float: left; width:25%;height:100%;">
+            <img src="http://picsum.photos/900/300?random=1" alt="view" width="90%" style="padding-left:5%;padding-right:5%;padding-top:5%;">
+            <p>姓名：呂承憲</p>
+            <hr>
+            <div id="about-me">
+                <p onclick="about_hidden()" style="cursor: pointer;">關於我： (點我展開)</p>
+                <ul style="display: none;list-style:decimal outside">
+                    <li>生日：89/12/26</li>
+                    <li>科系：食品科學</li>
+                    <li>興趣：打遊戲，寫程式</li>
+                    <li>專長：消費人</li>
+                    <li>夢想：去美國當軟體工程師</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="participate">
+                <h2>我所舉辦的比賽：第一屆黑八程式競賽</h2>
+                <a href="./HTML/form.html" target="_blank" style="text-decoration: none;">報名表單在此! (點我報名)</a>
+            </div>
+            <hr>
+            <div>
+                <img src="http://picsum.photos/300/1200?random=0" alt="view" width="100%" style="padding-top:5%;">
+            </div>
+        </div>
+
+        <div class="center" style="float:left; width:50%;height:100%;">
+            <div class="schedule">
+                <table class="introTable" style="background-color: #fff;">
+                  <thead>
+                    <tr style="background-color: lightblue">
+                      <th></th>
+                      <th>星期一</th>
+                      <th>星期二</th>
+                      <th>星期三</th>
+                      <th>星期四</th>
+                      <th>星期五</th>
+                      <th>星期六</th>
+                      <th>星期日</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>第一節 08-09</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>新興加工</td>
+                      <td>單元操作實習</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th>第二節 09-10</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>新興加工</td>
+                      <td>單元操作實習</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th>第三節 10-11</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th>第四節 11-12</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th>午休 12-13</th>
+                      <td colspan="7"></td>
+                    </tr>
+                    <tr>
+                      <th>第五節 13-14</th>
+                      <td>食品微生物實驗</td>
+                      <td>大數據分析</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th>第六節 14-15</th>
+                      <td>食品微生物實驗</td>
+                      <td>大數據分析</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th>第七節 15-16</th>
+                      <td>食品微生物實驗</td>
+                      <td>大數據分析</td>
+                      <td>程式設計</td>
+                      <td>網路伺服器建置</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th>第八節 16-17</th>
+                      <td></td>
+                      <td></td>
+                      <td>程式設計</td>
+                      <td>網路伺服器建置</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th>第九節 17-18</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>網路伺服器建置</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th>第A節 18-19</th>
+                      <td>多益衝刺班</td>
+                      <td>邏輯及人工智慧</td>
+                      <td>多益衝刺班</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th>第B節 19-20</th>
+                      <td>多益衝刺班</td>
+                      <td>邏輯及人工智慧</td>
+                      <td>多益衝刺班</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th>第C節 20-21</th>
+                      <td>多益衝刺班</td>
+                      <td></td>
+                      <td>多益衝刺班</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="right" style="float: left; width:25%;height:100%;">
+            <p>備忘錄：</p>
+            <div class="input-area" style="width: 100%; height:36px;position:relative;">
+                <input type="text" maxlength="150" style="width: 70%; height:32.8px;padding :0 ;position:absolute;" placeholder="記點甚麼"
+                id="memu" required>
+                <input type="button" style="width:15%; height:100%;padding:0;position:absolute;right:0" value="新增"
+                onclick="add_object()">
+            </div>
+            <hr>
+        </div>
+
+    </div>
+
+
+    <div class="tail" style="padding-bottom: 30px; padding-top : 30px;">
+        <nav style="display:flex;justify-content:space-around">
+            <div class="al"><a href="https://www.google.com" target="_blank"><img src="./Image/google logo.png" alt="Google" width="80px" height="80px"></a></div>
+            <div class="al"><a href="https://www.youtube.com" target="_blank"><img src="./Image/youtube loge.png" alt="Youtube" width="80px" height="80px"></a></div>
+            <div class="al"><a href="https://www.facebook.com" target="_blank"><img src="./Image/facebook logo.png" alt="Facebook" width="80px" height="80px"></a></div>
+        </nav>
     </div>
 </body>
 </html>

@@ -1,0 +1,260 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*-----------------------------------------------------*/
+body {
+  background-color: #edf;
+  background-image: url("https://i.postimg.cc/1zB12LdF/coding-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -20px;
+}
+strong {
+  color: red;
+}
+label.title-lable {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 16px;
+}
+
+select {
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 8px;
+}
+
+input {
+  display: block;
+  border: none;
+  height: 36px;
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 8px;
+}
+input[type="text"] {
+  width: 200px;
+  border-bottom: 2px #888 solid;
+}
+input[type="date"] {
+  border-bottom: 2px #888 solid;
+  width: 200px;
+}
+
+.radio-option {
+  display: block;
+}
+.radio-option input {
+  display: inline-block;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+.radio-option label {
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 8px;
+  height: 20px;
+  position: relative;
+  top: -12px;
+}
+
+.form-box {
+  display: block;
+  margin: auto;
+  width: 770px;
+  padding-bottom: 64px;
+}
+
+.box {
+  width: 770px;
+  padding: 12px;
+}
+
+.box-head,
+.box-body {
+  border: solid #aaa 1px;
+  border-radius: 8px;
+  background-color: #fff;
+  position: relative;
+}
+
+.box-head-color {
+  background-color: #b7cf4e;
+  height: 10px;
+  width: calc(100% + 2px);
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.box-head > .content {
+  padding: 22px 24px 24px;
+}
+.box-head > .content h1 {
+  font-size: 32px;
+  line-height: 48px;
+  padding: 8px 0;
+  font-weight: 600;
+}
+.box-head > .content p {
+  line-height: 21px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.box-body > .content {
+  padding: 24px 24px 24px;
+}
+.box-body > .content {
+}
+
+.submit {
+  position: relative;
+}
+.submit .submit_but {
+  position: absolute;
+  right: 0;
+}
+.submit .submit_but button {
+  height: 40px;
+  width: 70px;
+  background-color: rgb(221, 183, 112);
+  font-size: 18px;
+  border-radius: 8px;
+  border: 1px solid black;
+  font-weight: 900;
+}
+.submit .submit_but button:hover {
+  background-color: rgb(190, 150, 90);
+  transition: 0.2s;
+}

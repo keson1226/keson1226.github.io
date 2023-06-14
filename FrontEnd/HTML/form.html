@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Website</title>
+    <link rel="stylesheet" href="../CSS/reset.css" />
+    <link rel="stylesheet" href="../CSS/form.css" />
+  </head>
+  <body>
+    <div class="form-box">
+      <form action="">
+        <div class="box">
+          <div class="box-head">
+            <div class="box-head-color"></div>
+            <div class="content">
+              <h1>黑八程式競賽報名表</h1>
+              <p>
+                西元2326年7月11日，即將舉辦黑八程式大競賽，這會是一場盛大的程式競賽活動。此次比賽將辦在國立台灣師範大學附屬高級中學，歡迎各大學校的程式高手來一起共襄盛舉。
+                <strong style="color: red; padding: 14px 0 0; display: block"
+                  >* 必填項目</strong
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-body">
+            <div class="content">
+              <label for="name" class="title-lable"
+                >你的姓名<strong> *</strong></label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="請輸入姓名"
+                required
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-body">
+            <div class="content">
+              <label for="birth" class="title-lable"
+                >出生日期<strong> *</strong></label
+              >
+              <input
+                type="date"
+                id="birth"
+                name="birth"
+                min="1950-01-01"
+                max="2023-01-01"
+                required
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-body">
+            <div class="content">
+              <label class="title-lable">性別<strong> *</strong></label>
+              <div class="radio-option">
+                <input type="radio" id="male" name="sex" value="m" required />
+                <label for="male">男生</label>
+              </div>
+              <div class="radio-option">
+                <input type="radio" id="female" name="sex" value="f" />
+                <label for="female">女生</label>
+              </div>
+              <div class="radio-option">
+                <input type="radio" id="other" name="sex" value="o" />
+                <label for="other">其他</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-body">
+            <div class="content">
+              <label for="proglang" class="title-lable"
+                >主要程式語言<strong> *</strong></label
+              >
+              <select name="proglang" id="proglang" required>
+                <option value=""></option>
+                <option value="py">Python</option>
+                <option value="ja">Java</option>
+                <option value="js">JavaScript</option>
+                <option value="cpp">C++</option>
+                <option value="c">C</option>
+                <option value="cs">C#</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="submit">
+          <div class="submit_but">
+            <button type="submit">提交</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

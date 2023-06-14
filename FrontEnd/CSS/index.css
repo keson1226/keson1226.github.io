@@ -3,7 +3,8 @@
     background-color: #bfcdbf;
     width: 75%;
     margin: auto;
-
+    margin-top: 15px;
+    
     padding-top: 10px;
     padding-bottom: 20px;
 
@@ -33,4 +34,42 @@
     text-align: center;
 
     display: block;
+}
+
+.schedule > table {
+    text-align: center;
+}
+.schedule td,th{
+    width: 12.5%;
+}
+.schedule tr{
+    height: 45px;
+}
+
+table,thead,tbody,tr,th,td{
+    border: 1.5px solid black;
+}
+
+.web-contain{
+    margin-top: 15px;
+    height: 900px;
+}
+
+.left,.right{
+    height: 100%;
+    text-align: left;
+    line-height: 36px;
+    font-size: 20px  ;
+    background-color: #6cB4Ae;
+}
+.center{
+    background-color: #ccc;
+}
+
+body{
+    background-color: #f7bd77;
+}
+
+.al > a > img {
+    border-radius: 50%;
 }
